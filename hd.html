@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=previce-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>最新活动</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/hd.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#one a").click(function(){
+			$("#two").slideDown(700)
+			$("#therr").slideDown(700)
+			$("#one a").css("color","#000")
+			$("#one a").css("text-decoration","none")
+		})
+	})
+</script>
+<body>
+	<header id="header">
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-one">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand"><img src="images/logo-1.png" class="img-responsive" alt=""></a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-one">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="hd.html">最新活动</a></li>
+						<li><a href="xm.html">志愿项目</a></li>
+						<li><a href="bm.html">我要报名</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header>
+	<section class="bg">
+	</section>
+	<figure class="zhuti">
+		<div class="container">
+			<h3 class="text-center">— 最新活动 —</h3>
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-10 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-1">
+					<div class="row page-header">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hd-box">
+							<a href="xq1.html" title=""><img src="images/xm.png" class="img-rounded img-responsive" alt=""></a>
+						</div>
+						<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 one">
+							<h5>海南青年旅游服务志愿者服务志愿者</h5>
+							<p>作者：王爱心 <span class="pull-right">2018-1-1</span></p>
+						</div>
+					</div>
+					<div class="row page-header">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hd-box">
+							<a href="xq1.html" title=""><img src="images/xm1.png" class="img-rounded img-responsive" alt=""></a>
+						</div>
+						<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 one">
+							<h5>海南青年旅游服务志愿者服务志愿者</h5>
+							<p>作者：符志愿 <span class="pull-right">2018-1-1</span></p>
+						</div>
+					</div>
+					<div class="row page-header">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hd-box">
+							<a href="xq1.html" title=""><img src="images/xm2.png" class="img-rounded img-responsive" alt=""></a>
+						</div>
+						<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 one">
+							<h5>海南青年旅游服务志愿者服务志愿者</h5>
+							<p>作者：张关爱<span class="pull-right">2018-1-1</span></p>
+						</div>
+					</div>
+					<div class="row page-header">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hd-box">
+							<a href="xq1.html" title=""><img src="images/xm3.png" class="img-rounded img-responsive" alt=""></a>
+						</div>
+						<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 one">
+							<h5>海南青年旅游服务志愿者服务志愿者</h5>
+							<p>作者：符行动 <span class="pull-right">2018-1-1</span></p>
+						</div>
+					</div>
+					<div class="row page-header" id="two">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hd-box">
+							<a href="xq1.html" title=""><img src="images/xm2.png" class="img-rounded img-responsive" alt=""></a>
+						</div>
+						<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 one">
+							<h5>海南青年旅游服务志愿者服务志愿者</h5>
+							<p>作者：符志愿  <span class="pull-right">2018-1-1</span></p>
+						</div>
+					</div>
+					<div class="row page-header" id="therr">
+						<div class="col-lg-5 col-md-5 col-sm-5 col-xs-5 hd-box">
+							<a href="xq1.html" title=""><img src="images/xm3.png" class="img-rounded img-responsive" alt=""></a>
+						</div>
+						<div class="col-lg-7 col-md-7 col-sm-7 col-xs-7 one">
+							<h5>海南青年旅游服务志愿者服务志愿者</h5>
+							<p>作者：王爱心  <span class="pull-right">2018-1-1</span></p>
+						</div>
+					</div>
+					<div class="row text-center" id="one">
+						<a href="#two" title=""><span onclick="javascript:this.innerHTML=(this.innerHTML=='更多'?'已经到底了~~':'已经到底了~~')">更多</span></a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</figure>
+	 <footer id="footer">
+    	<div class="navbar navbar-default navbar-fixed-bottom">
+    		<div class="container">
+    			<div class="row text-center">
+    				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    					<a href="index.html"><span class="glyphicon glyphicon-home"></span>
+    						<p>首页</p></a>
+    				</div>
+    				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    					<a href="hd.html" class="red"><span class="glyphicon glyphicon-bell"></span>
+    						<p>最新活动</p></a>
+    				</div>
+    				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    					<a href="xm.html"><span class="glyphicon glyphicon-heart"></span>
+    						<p>志愿项目</p></a>
+    				</div>
+    				<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+    					<a href="bm.html"><span class="glyphicon glyphicon-edit"></span>
+    						<p>报名加入</p></a>
+    				</div>
+    			</div>
+    		</div>
+    	</div>
+    </footer>
+</body>
+</html>

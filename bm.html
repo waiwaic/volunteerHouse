@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=previce-width,initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>我要报名</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
+	<link rel="stylesheet" type="text/css" href="css/bm.css">
+	<script src="js/jquery-3.1.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</head>
+<body>
+	<header id="header">
+		<div class="navbar navbar-default navbar-fixed-top">
+			<div class="container">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-one">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a href="index.html" class="navbar-brand"><img src="images/logo-1.png" class="img-responsive" alt=""></a>
+				</div>
+				<div class="collapse navbar-collapse" id="navbar-one">
+					<ul class="nav navbar-nav navbar-right">
+						<li><a href="index.html">首页</a></li>
+						<li><a href="hd.html">最新活动</a></li>
+						<li><a href="xm.html">志愿项目</a></li>
+						<li><a href="bm.html">我要报名</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</header><!-- /header -->
+	<section class="bm">
+		<div class="bm-bg">
+		</div>
+		<div class="container">
+			<h3 class="text-center">— 我要报名 —</h3>
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+					<form action="php/add_bm.php" method="post" accept-charset="utf-8">
+						<input id="name" type="text" name="name" placeholder="请输入您的姓名" class="form-control to" required="required">
+						<input id="phoneNum" type="number" name="phoneNum" placeholder="请输入您的手机号码" class="form-control to" required="required">
+						<select class="form-control to" name="type">
+							<option>"雷锋月“--禁烟行动</option>
+							<option>关爱老年人、践行雷锋精神</option>
+							<option>移动青少年宫</option>
+							<option>2016年学雷锋志愿服务活动</option>
+						</select>
+						<!-- <input type="text" name="content" placeholder="请备注您要报名的项目" class="form-control to" required="required"> -->
+						<button type="submit" class="btn btn-primary to pull-right">提交</button>
+
+					</form>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="cg">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-8 col-md-8 col-sm-8 col-xs-12 col-lg-offset-2 col-md-offset-2 col-sm-offset-2">
+					<div class="cg-title">
+						<h4><span class="glyphicon glyphicon-edit"></span> 报名成功</h4>
+					</div>
+					<div id="liebiao">
+						<div class="panel panel-default cg-to">
+							<div class="panel-body">
+								<h5>姓名：王志博</h5>
+								<p>报名项目："雷锋月“--禁烟行动</p>
+								<p>联系电话：13158989589 </p>
+							</div>
+						</div>
+						<div class="panel panel-default">
+							<div class="panel-body">
+								<h5>姓名：王志博</h5>
+								<p>报名项目："雷锋月“--禁烟行动</p>
+								<p>联系电话：13158989589 </p>
+							</div>
+						</div>
+						<div class="text-center">
+							<a href="javaScript:void(0)" onclick="getMsg();">更多</a>
+						</div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer id="footer">
+		<div class="navbar navbar-default navbar-fixed-bottom">
+			<div class="container">
+				<div class="row text-center">
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<a href="index.html"><span class="glyphicon glyphicon-home"></span>
+							<p>首页</p>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<a href="hd.html"><span class="glyphicon glyphicon-bell"></span>
+							<p>最新活动</p>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<a href="xm.html"><span class="glyphicon glyphicon-heart"></span>
+							<p>志愿项目</p>
+						</a>
+					</div>
+					<div class="col-lg-3 col-md-3 col-sm-3 col-xs-3">
+						<a href="bm.html" class="red"><span class="glyphicon glyphicon-edit"></span>
+							<p>我要报名</p>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+	<script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+	<script type="text/javascript">
+		var sign = 0;
+		$(window).ready(function(){
+			document.getElementById('name').value = "";
+			document.getElementById('phoneNum').value = "";
+			getMsg();
+		})
+		function getMsg(){
+			sign++;
+			$.post("php/list.php",{page:sign},function(data){
+				document.getElementById('liebiao').innerHTML = data;
+			})
+		}
+	</script>
+</body>
+</html>

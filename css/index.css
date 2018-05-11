@@ -1,0 +1,147 @@
+
+#nav{
+	margin-top: 20px;
+	padding-bottom: 15px;
+	border-bottom: 1px solid #e3e4e5;
+}
+#nav h5{
+	font-size: 12px;
+}
+/**活动分享**/
+.fx-center{
+	padding-left: 5px;
+	padding-right: 5px;
+}
+.fx .thumbnail{
+	box-shadow: 0px 5px 8px #e3e4e5;
+}
+.fx{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e3e4e5;
+}
+.fx-box{
+	position: relative;
+	overflow: hidden;
+}
+.fx-box img{
+	transition: all 0.4s linear;
+	-webkit-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+}
+.fx-box:hover img{
+	transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+}
+/**最新活动**/
+.hd{
+	padding-bottom: 20px;
+	border-bottom: 1px solid #e3e4e5;
+}
+.hd-box{
+	position: relative;
+	overflow: hidden;
+}
+.hd-box img{
+	transition: all 0.4s linear;
+	-webkit-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-o-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+}
+.hd-box:hover img{
+	transform: scale(1.0);
+	-webkit-transform: scale(1.0);
+	-o-transform: scale(1.0);
+	-ms-transform: scale(1.0);
+	-moz-transform: scale(1.0);
+}
+.hd-left{
+	padding-right:5px;
+	margin-top: 10px;
+}
+.hd-right{
+	padding-left:5px;
+	margin-top: 10px;
+}
+/**志愿项目**/
+.xm{
+	padding-bottom: 40px;
+}
+.bg{
+	background-image: url(../images/gd.png);
+	background-size: cover;
+	height: 100px;
+}
+.xm a img{
+	transition: all 0.4s linear;
+	-webkit-transition: all 0.4s linear;
+	-o-transition: all 0.4s linear;
+	-ms-transition: all 0.4s linear;
+	-moz-transition: all 0.4s linear;
+}
+.xm a:hover img{
+	box-shadow: 0px 0px 8px #999;
+}
+.xm-right{
+	padding-left: 0px;
+}
+.xm-right h5{
+	margin-top: 5px;
+	font-weight: 600;
+}
+.to{
+	margin-top: 10px;
+}
+.page-header{
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+/**我要报名**/
+.ly{
+	margin-bottom: 80px;
+}
+@media(min-width: 992px){
+	#nav{
+	margin-top: 30px;
+	padding-bottom: 25px;
+	border-bottom: 1px solid #e3e4e5;
+}
+#nav h5{
+	font-size: 14px;
+}
+/**活动分享**/
+.fx-center{
+	padding-left: 15px;
+	padding-right: 15px;
+}
+.fx{
+	padding-bottom: 50px;
+	border-bottom: 1px solid #e3e4e5;
+}
+/**最新活动**/
+.hd{
+	padding-bottom: 50px;
+	border-bottom: 1px solid #e3e4e5;
+}
+.hd-left{
+	padding-right:15px;
+	margin-top: 10px;
+}
+.hd-right{
+	padding-left:15px;
+	margin-top: 10px;
+}
+.ly{
+	margin-bottom: 120px;
+}
+}

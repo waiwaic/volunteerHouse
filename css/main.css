@@ -1,0 +1,42 @@
+#header{
+	margin-bottom: 50px;
+}
+.navbar-brand{
+	padding-top: 0px;
+}
+.navbar-default{
+	background-color: #fff;
+}
+body{
+	font-family: "微软雅黑";
+}
+#footer a{
+	color: #343434;
+}
+#footer .navbar{
+	padding-top: 5px;
+}
+#footer p{
+	font-size: 12px;
+}
+#footer .navbar{
+	padding-top: 5px;
+}
+#footer .red{
+	color: red;
+}
+h3{
+	font-size: 20px;
+	color: #6D0505;
+	margin-top: 35px;
+	margin-bottom: 35px;
+}
+
+@media(min-width: 992px){
+	h3{
+	font-size: 22px;
+	color: #6D0505;
+	margin-top: 65px;
+	margin-bottom: 65px;
+}
+}
