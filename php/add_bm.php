@@ -4,7 +4,7 @@ $name = $_POST['name'];
 $phoneNum = $_POST['phoneNum'];
 $type = $_POST['type'];
 
-$conn = mysqli_connect('localhost','root','','thehomeofvolunteers');
+$conn = mysqli_connect('mysql://mysql:3306/','userA76','5xHrGB3ScWVYRm5J','thehomeofvolunteers');
 if(!$conn){
 	echo "<script>
 		alert('sorry,connect error .Please contact the developer!');
