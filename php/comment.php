@@ -14,5 +14,5 @@ if($_GET[id]){
     }
 }
 if($_POST[comment]){
-    $dbh->exec("INSERT INTO comments VALUES($_POST[name],$_POST[comment])");
+    $dbh->exec("INSERT INTO comments VALUES($_POST[name],$_POST[comment],$_POST[id])");
 }
