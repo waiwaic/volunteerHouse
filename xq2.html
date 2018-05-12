@@ -58,7 +58,7 @@
 						<a href="bm.html" class="btn btn-primary pull-right">我要报名</a>
 
 						<div class="pl">
-							<p class="text-center"><button class="btn btn-default"><span class="glyphicon glyphicon-volume-up"></span> 分享</button>&nbsp;&nbsp;<button class="btn btn-default" id="stars" onclick="star()"><span class="glyphicon glyphicon-thumbs-up"></span> 2500</button>&nbsp;&nbsp;<button class="btn btn-default" data-target="#mymodal" data-toggle="modal"><span class="glyphicon glyphicon-edit"></span>  评论</button></p>
+							<p class="text-center"><button class="btn btn-default"><span class="glyphicon glyphicon-volume-up"></span> 分享</button>&nbsp;&nbsp;<button class="btn btn-default" onclick="star()"><span class="glyphicon glyphicon-thumbs-up"></span> <span id="stars">2500</span></button>&nbsp;&nbsp;<button class="btn btn-default" data-target="#mymodal" data-toggle="modal"><span class="glyphicon glyphicon-edit"></span>  评论</button></p>
 
 							<div class="pl-title">
 								<h4><span class="glyphicon glyphicon-edit"></span> 您的评论</h4>
@@ -115,7 +115,7 @@
     					<input id="comment" type="text" class="form-control to" name="comment" rows="3" placeholder="请输入您的评论" required="required">
     				</div>
     				<div class="modal-footer">
-    					<button type="submit" class="btn btn-primary" onclick="post_comment()">发布</button>
+    					<button type="submit" class="btn btn-primary" onclick="comment()">发布</button>
     				</div>
     			</form>
     		</div><!-- /.modal-content -->
