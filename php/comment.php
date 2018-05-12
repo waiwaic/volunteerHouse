@@ -7,7 +7,13 @@ try {
 } catch (PDOException $e) {
     echo 'Connection failed: ' . $e->getMessage();
 }
-if($_POST[comment]){
+if(isset($_GET)){
+    foreach ($dbh->query("SELECT comment FROM comments") as $row) {
+        echo "<h5>姓名：$row[name]</h5>";
+        echo "<p>评价：$row[comment]</p>";
+    }
+}
+}else if(isset($_POST)){
     $dbh->exec("INSERT INTO comments VALUES($_POST[name],$_POST[comment],$_POST[id])");
     foreach ($dbh->query("SELECT comment FROM comments") as $row) {
         echo "<h5>姓名：$row[name]</h5>";
