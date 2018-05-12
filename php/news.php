@@ -1,12 +1,12 @@
 <?php
-require('pdo.php');
+require('dbh.php');
 if($_POST[comment]){
-  pdo->exec("INSERT INTO comments VALUES($_POST[id],$_POST[comment]");
+  dbh->exec("INSERT INTO comments VALUES($_POST[id],$_POST[comment]");
 }else if($_POST[star]){
-  pdo->exec("UPDATE stars SET num=num+1 WHERE id=$_POST[id]");
+  dbh->exec("UPDATE stars SET num=num+1 WHERE id=$_POST[id]");
 }else if($_GET[id]){
   echo '<star>';
-  echo pdo->query("SELECT star FROM stars WHERE id=$_GET[id]")[0];
+  echo dbh->query("SELECT star FROM stars WHERE id=$_GET[id]")[0];
   echo '</star>;
   echo '<comments>';
   foreach(pdo->query("SELECT comment FROM comments WHERE id=$_GET[id]") as $row){
