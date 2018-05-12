@@ -9,7 +9,7 @@ try {
 }
 if(isset($_GET)){
     foreach ($dbh->query("SELECT * FROM stars WHERE id=$_GET[id] as $row) {
-        echo $row['star'];
+        echo $row[star];
     }
 }else if(isset($_POST)){
     $dbh->exec("UPDATE stars SET star=star+1 WHERE id=$_POST[id]");
