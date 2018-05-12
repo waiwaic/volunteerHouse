@@ -12,7 +12,7 @@ if($_POST[comment]){
   foreach(pdo->query("SELECT comment FROM comments WHERE id=$_GET[id]") as $row){
     echo '<comment>;
     echo $row[comment];
-    echo '</comment>'
+    echo '</comment>';
   }
   echo '</comments>';
 }
