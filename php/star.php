@@ -13,5 +13,5 @@ if($_GET[id]){
   }
 }
 if($_POST[id]){
-  $dbh->exec("UPDATE stars SET num=num+1 WHERE id=$_POST[id]");
+  $dbh->exec("UPDATE stars SET star=star+1 WHERE id=$_POST[id]");
 }
