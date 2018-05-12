@@ -8,7 +8,9 @@ try {
     echo 'Connection failed: ' . $e->getMessage();
 }
 if(isset($_GET[id])){
-    $dbh->query("SELECT star FROM stars WHERE id=$id")
+    foreach ($dbh->query("SELECT star FROM stars WHERE id=$id") as $row) {
+        print $row['star'];
+    }
 }
 if(isset($_POST[id])){
     $dbh->exec("UPDATE stars SET star=star+1 WHERE id=$_POST[id]");
