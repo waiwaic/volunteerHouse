@@ -8,7 +8,7 @@ try {
     echo 'Connection failed: ' . $e->getMessage();
 }
 if(isset($_POST[comment])){
-    $dbh->exec("INSERT INTO comments VALUES($_POST[name],$_POST[comment]");
+    $dbh->exec("INSERT INTO comments VALUES($_POST[comment],$_POST[name]");
 }
 print_r($_POST);
 foreach ($dbh->query("SELECT * FROM comments") as $row){
