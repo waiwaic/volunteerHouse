@@ -9,7 +9,7 @@ try {
 }
 if($_GET[id]){
   foreach($dbh->query("SELECT num FROM stars WHERE id=$id") as $row){
-      echo $row[num];
+      echo $row[star];
   }
 }
 if($_POST[id]){
