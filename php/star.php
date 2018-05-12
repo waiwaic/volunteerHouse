@@ -1,5 +1,5 @@
 <?php
-require('pdo.php');
+require('dbh.php');
 if($_GET[star]){
   echo dbh->query("SELECT star FROM stars WHERE id=0")[0];
 }
