@@ -1,4 +1,4 @@
-function loadXMLDoc(){
+function comment(){
 var xmlhttp;
 if (window.XMLHttpRequest){
     //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
