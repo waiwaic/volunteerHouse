@@ -18,3 +18,4 @@ xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("star=1");
 document.getElementById("stars").innerHTML=(parseInt(document.getElementById("stars").innerHTML)+1).toString();
 }
+}
