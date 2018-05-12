@@ -1,3 +1,3 @@
 <?php
-require('pdo.php');
-dbh->exec("INSERT INTO comments VALUES($_POST[name],$_POST[comment]");
+require('dbh.php');
+dbh->exec("INSERT INTO comments VALUES($_POST[name],$_POST[comment])");
