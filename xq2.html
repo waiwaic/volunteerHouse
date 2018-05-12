@@ -13,7 +13,7 @@
 	<script src="js/comment.js"></script>
 	<script src="js/star.js"></script>
 </head>
-<body>
+<body onload="star()">
 	<header id="header">
 		<div class="navbar navbar-default navbar-fixed-top">
 			<div class="container">
@@ -58,7 +58,7 @@
 						<a href="bm.html" class="btn btn-primary pull-right">我要报名</a>
 
 						<div class="pl">
-							<p class="text-center"><button class="btn btn-default"><span class="glyphicon glyphicon-volume-up"></span> 分享</button>&nbsp;&nbsp;<button class="btn btn-default" onclick="star()"><span class="glyphicon glyphicon-thumbs-up"></span> <span id="stars" onload="star()">2500</span></button>&nbsp;&nbsp;<button class="btn btn-default" data-target="#mymodal" data-toggle="modal"><span class="glyphicon glyphicon-edit"></span>  评论</button></p>
+							<p class="text-center"><button class="btn btn-default"><span class="glyphicon glyphicon-volume-up"></span> 分享</button>&nbsp;&nbsp;<button class="btn btn-default" onclick="star()"><span class="glyphicon glyphicon-thumbs-up"></span> <span id="stars" ></span></button>&nbsp;&nbsp;<button class="btn btn-default" data-target="#mymodal" data-toggle="modal"><span class="glyphicon glyphicon-edit"></span>  评论</button></p>
 
 							<div class="pl-title">
 								<h4><span class="glyphicon glyphicon-edit"></span> 您的评论</h4>
