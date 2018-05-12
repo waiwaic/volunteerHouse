@@ -14,4 +14,7 @@ if(isset($_GET[id])){
 }
 if(isset($_POST[id])){
     $dbh->exec("UPDATE stars SET star=star+1 WHERE id=$_POST[id]");
+    foreach ($dbh->query("SELECT star FROM stars WHERE id=$id") as $row) {
+        print $row['star'];
+    }
 }
