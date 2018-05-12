@@ -7,12 +7,8 @@ try {
 } catch (PDOException $e) {
     echo 'Connection failed: ' . $e->getMessage();
 }
-foreach ($dbh->query("SELECT * FROM comments") as $row) {
-        echo "<h5>姓名：$row[name]</h5>";
-        echo "<p>评价：$row[comment]</p>";
-    }
 if(isset($_GET)){
-    foreach ($dbh->query("SELECT * FROM comments") as $row) {
+    foreach ($dbh->query("SELECT * FROM comments") as $row){
         echo "<h5>姓名：$row[name]</h5>";
         echo "<p>评价：$row[comment]</p>";
     }
