@@ -65,7 +65,7 @@
 							</div>
 							<div class="pl-main">
 								<div class="panel panel-default cg-to">
-									<div class="panel-body" id="comments">
+									<div class="panel-body" id="result">
 										<h5>姓名：王志博</h5>
 										<p>评价：主动或响应血液需求呼吁，自愿参加全血及成分血捐献。</p>
 									</div>
@@ -109,13 +109,13 @@
     				<button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
     				<h4 class="modal-title">评论</h4>
     			</div>
-    			<form onsubmit="post_comment()">
+    			<form>
     				<div class="modal-body">
     					<input id="name" type="text" name="name" placeholder="请输入您的姓名" class="form-control to">
-    					<textarea class="form-control to" name="comment" rows="3" placeholder="请输入您的评论" required="required"></textarea>
+    					<input id="comment" type="text" class="form-control to" name="comment" rows="3" placeholder="请输入您的评论" required="required">
     				</div>
     				<div class="modal-footer">
-    					<button type="submit" class="btn btn-primary">发布</button>
+    					<button type="submit" class="btn btn-primary" onclick="post_comment()">发布</button>
     				</div>
     			</form>
     		</div><!-- /.modal-content -->
