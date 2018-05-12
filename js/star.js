@@ -11,5 +11,5 @@ else
 xmlhttp.open("POST","/php/star.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
 xmlhttp.send("star=1");
-document.getElementById("star").innerHTML=document.getElementById("star").innerHTML+1;
+document.getElementById("star").innerHTML=parseInt(document.getElementById("star").innerHTML)+1.toString();
 }
