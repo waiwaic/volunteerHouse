@@ -14,7 +14,7 @@ try {
     echo 'Connection failed: ' . $e->getMessage();
 
 }
-foreach ($dbh->query($sql) as $row) {
+foreach ($dbh->query("SELECT comment FROM comments WHERE id=$_GET[id]") as $row) {
   echo "<h5>$row[name]</h5>";
   echo "<p>$row[comment]</p>";
 }
