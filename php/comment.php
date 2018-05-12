@@ -10,7 +10,6 @@ try {
 if(isset($_POST[comment])){
     $dbh->exec("INSERT INTO comments VALUES($_POST[comment],$_POST[name])");
 }
-print_r($_POST);
 foreach ($dbh->query("SELECT * FROM comments") as $row){
         echo "<h5>姓名：$row[name]</h5>";
         echo "<p>评价：$row[comment]</p>";
