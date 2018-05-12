@@ -8,7 +8,7 @@ try {
     echo 'Connection failed: ' . $e->getMessage();
 }
 if($_GET[id]){
-  foreach($dbh->query("SELECT num FROM stars WHERE id=$id") as $row){
+  foreach($dbh->query("SELECT star FROM stars WHERE id=$id") as $row){
       echo $row[star];
   }
 }
