@@ -7,9 +7,11 @@ try {
 } catch (PDOException $e) {
     echo 'Connection failed: ' . $e->getMessage();
 }
-if($_GET){
-  echo $dbh->query("SELECT num FROM stars WHERE id=0");
+if($_GET[id]){
+  foreach($dbh->query("SELECT num FROM stars WHERE id=$id") as $row){
+      echo $row[num];
+  }
 }
-if($_POST){
+if($_POST[id]){
   $dbh->exec("UPDATE stars SET num=num+1 WHERE id=$_POST[id]");
 }
