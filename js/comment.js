@@ -1,4 +1,4 @@
-function comment(){
+function get_comments(){
 var xmlhttp;
 if (window.XMLHttpRequest){
     //  IE7+, Firefox, Chrome, Opera, Safari 浏览器执行代码
@@ -17,4 +17,3 @@ xmlhttp.onreadystatechange=function(){
 xmlhttp.open("GET","/php/comments.php",true);
 xmlhttp.send();
 }
-
