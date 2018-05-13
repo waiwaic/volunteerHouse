@@ -7,5 +7,5 @@ xmlhttp.onreadystatechange=function(){
 }
 xmlhttp.open("POST","/php/comment.php",true);
 xmlhttp.setRequestHeader("Content-type","application/x-www-form-urlencoded");
-xmlhttp.send('name='+document.getElementById("name").value+'&+comment='document.getElementById("comments").value);
+xmlhttp.send('name=' + document.getElementById("name").value + '&comment=' + document.getElementById("comments").value);
 }
