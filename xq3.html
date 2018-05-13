@@ -10,6 +10,9 @@
 	<link rel="stylesheet" type="text/css" href="css/xq2.css">
 	<script src="js/jquery-3.1.1.min.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/comment.js"></script>
+	<script src="js/star.js"></script>
+	<script src="js/get_comment.js"></script>
 </head>
 <body>
 	<header id="header">
@@ -56,14 +59,14 @@
 						<a href="bm.html" class="btn btn-primary pull-right">我要报名</a>
 
 						<div class="pl">
-							<p class="text-center"><button class="btn btn-default"><span class="glyphicon glyphicon-volume-up"></span> 分享</button>&nbsp;&nbsp;<button class="btn btn-default"><span class="glyphicon glyphicon-thumbs-up"></span> 2500</button>&nbsp;&nbsp;<button class="btn btn-default" data-target="#mymodal" data-toggle="modal"><span class="glyphicon glyphicon-edit"></span>  评论</button></p>
+							<p class="text-center"><button class="btn btn-default"><span class="glyphicon glyphicon-volume-up"></span> 分享</button>&nbsp;&nbsp;<button class="btn btn-default" onclick="star()"><span class="glyphicon glyphicon-thumbs-up"></span> <span id="star">2500</span></button>&nbsp;&nbsp;<button class="btn btn-default" data-target="#mymodal" data-toggle="modal"><span class="glyphicon glyphicon-edit"></span>  评论</button></p>
 
 							<div class="pl-title">
 								<h4><span class="glyphicon glyphicon-edit"></span> 您的评论</h4>
 							</div>
 							<div class="pl-main">
 								<div class="panel panel-default cg-to">
-									<div class="panel-body">
+									<div class="panel-body" id="comments">
 										<h5>姓名：王志博</h5>
 										<p>评价：主动或响应血液需求呼吁，自愿参加全血及成分血捐献。</p>
 									</div>
@@ -110,7 +113,7 @@
     			<form action="">
     				<div class="modal-body">
     					<input id="name" type="text" name="name" placeholder="请输入您的姓名" class="form-control to">
-    					<textarea class="form-control to" rows="3" placeholder="请输入您的评论" required="required"></textarea>
+    					<textarea id="comment" class="form-control to" rows="3" placeholder="请输入您的评论" required="required"></textarea>
     				</div>
     				<div class="modal-footer">
     					<button type="submit" class="btn btn-primary" data-dismiss="modal">发布</button>
