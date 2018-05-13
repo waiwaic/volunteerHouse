@@ -13,6 +13,7 @@ if(isset($_POST[comment])){
 foreach ($dbh->query("SELECT * FROM comments") as $row){
         echo "<h5>姓名：$row[name]</h5>";
         echo "<p>评价：$row[comment]</p>";
+        echo "<hr>";
     }
 /*if(isset($_GET)){
     foreach ($dbh->query("SELECT * FROM comments") as $row){
